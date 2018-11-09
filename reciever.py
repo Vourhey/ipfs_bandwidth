@@ -36,6 +36,7 @@ if __name__ == '__main__':
 
         if len(h_list) == 1000:
             with open('recieved.txt', 'w') as f:
+                f.write('\n'.join(h_list))
                 f.write('\n'.join(n_list))
                 f.close()
             print(time() - current_time)
